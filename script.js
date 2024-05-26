@@ -1,4 +1,7 @@
 const URL = "https://cat-fact.herokuapp.com";
+const btn = document.querySelector("#btn");
+
+
 
 const getFacts = async () => {
 
@@ -13,4 +16,5 @@ const getFacts = async () => {
 
     }
 }
-getFacts()
+
+btn.addEventListener("click" , getFacts)
