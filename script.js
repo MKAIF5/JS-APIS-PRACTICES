@@ -16,12 +16,17 @@ const btn = document.querySelector("#btn");
 //     }
 // }
 function getFacts() {
-    fetch(URL).then((response) => {
-        return response.json();
-    })
-        .then((data) => {
-            console.log(data);
+    try {
+        fetch(URL).then((response) => {
+            return response.json();
         })
+            .then((data) => {
+                console.log(data);
+            })
+        
+    } catch (error) {
+        console.log(error);
+    }
 }
 getFacts()
 btn.addEventListener("click", getFacts)
