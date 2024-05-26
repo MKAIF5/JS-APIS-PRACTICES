@@ -1,4 +1,14 @@
 const URL = "https://cat-fact.herokuapp.com";
 
-const response = fetch(URL);
-console.log(response);
+const getFacts = async () => {
+
+    try {
+        const response = await fetch(URL);
+        console.log(response);
+
+
+    } catch (error) {
+
+    }
+}
+getFacts()
