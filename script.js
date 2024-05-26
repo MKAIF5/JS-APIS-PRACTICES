@@ -3,18 +3,25 @@ const btn = document.querySelector("#btn");
 
 
 
-const getFacts = async () => {
+// const getFacts = async () => {
 
-    try {
-        const response = await fetch(URL);
-        console.log(response);
-        let data = response.text[0]
-        console.log(data);
+//     try {
+//         const response = await fetch(URL).json();
+//         console.log(response);
+//         let data = response.text[0]
+//         console.log(data);
 
 
-    } catch (error) {
-
-    }
+//     } catch (error) {
+//     }
+// }
+function getFacts() {
+    fetch(URL).then((response) => {
+        return response.json();
+    })
+        .then((data) => {
+            console.log(data);
+        })
 }
-
-btn.addEventListener("click" , getFacts)
+getFacts()
+btn.addEventListener("click", getFacts)
