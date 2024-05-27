@@ -31,10 +31,10 @@ const btn = document.querySelector("#btn");
 // getFacts()
 // btn.addEventListener("click", getFacts)
 
-let p = new Promise((resolve, rejects) => {
+let p = new Promise((resolve, reject) => {
     console.log("promise is pending");
     setTimeout(() => {
-        console.log("i am a full fill")
+        console.log("i ma fullfill")
         resolve(true)
     }, 5000)
-})
+});
