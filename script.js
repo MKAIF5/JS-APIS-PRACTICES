@@ -57,6 +57,10 @@ p1.then((value) =>{
     console.log(value);
 });
 
+p2.catch((error) =>{
+    console.log("some error is p2");
+})
+
 // p2.then((value) =>{
 //     console.log(value);
 // });
