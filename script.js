@@ -50,3 +50,5 @@ let p2 = new Promise((resolve, reject) => {
 });
 
 console.log(p1 , p2);
+
+//farq nhi parta ktne promises hain same time pe chley gy
