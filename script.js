@@ -23,10 +23,16 @@ const btn = document.querySelector("#btn");
 //             .then((data) => {
 //                 console.log(data);
 //             })
-        
+
 //     } catch (error) {
 //         console.log(error);
 //     }
 // }
 // getFacts()
 // btn.addEventListener("click", getFacts)
+
+let p = new Promise((resolve , rejects) =>{
+    setTimeout(() =>{
+      alert("i am a full fill")
+    } , 5000)
+})
