@@ -49,15 +49,15 @@ let p2 = new Promise((resolve, reject) => {
     }, 5000)
 });
 
-console.log(p1 , p2);
+console.log(p1, p2);
 
 //farq nhi parta ktne promises hain same time pe chley gy
 
-p1.then((value) =>{
+p1.then((value) => {
     console.log(value);
 });
 
-p2.catch((error) =>{
+p2.catch((error) => {
     console.log("some error is p2");
 })
 
