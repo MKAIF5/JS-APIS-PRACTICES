@@ -31,12 +31,22 @@ const btn = document.querySelector("#btn");
 // getFacts()
 // btn.addEventListener("click", getFacts)
 
-let p = new Promise((resolve, reject) => {
+let p1 = new Promise((resolve, reject) => {
     console.log("promise is pending");
     setTimeout(() => {
-        console.log("i ma fullfill")
+        console.log("i ma fullfill and i am resolved")
+        resolve(true)
+    }, 5000)
+});
+
+
+
+let p2 = new Promise((resolve, reject) => {
+    console.log("promise is pending");
+    setTimeout(() => {
+        console.log("i ma fullfill i am rejected")
         reject(new Error("i am a new error"))
     }, 5000)
 });
 
-console.log(p);
+console.log(p1 , p2);
