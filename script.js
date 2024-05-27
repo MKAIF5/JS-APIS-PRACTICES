@@ -44,7 +44,7 @@ let p1 = new Promise((resolve, reject) => {
 let p2 = new Promise((resolve, reject) => {
     console.log("promise is pending");
     setTimeout(() => {
-        console.log("i ma fullfill i am rejected")
+        // console.log("i ma fullfill i am rejected")
         reject(new Error("i am a new error"))
     }, 5000)
 });
@@ -52,3 +52,11 @@ let p2 = new Promise((resolve, reject) => {
 console.log(p1 , p2);
 
 //farq nhi parta ktne promises hain same time pe chley gy
+
+p1.then((value) =>{
+    console.log(value);
+});
+
+// p2.then((value) =>{
+//     console.log(value);
+// });
