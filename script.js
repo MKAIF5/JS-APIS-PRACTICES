@@ -61,6 +61,9 @@ p2.catch((error) =>{
     console.log("some error is p2");
 })
 
+console.log(p1);
+console.log(p2);
+
 // p2.then((value) =>{
 //     console.log(value);
 // });
