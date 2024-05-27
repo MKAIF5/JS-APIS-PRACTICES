@@ -38,3 +38,5 @@ let p = new Promise((resolve, reject) => {
         resolve(true)
     }, 5000)
 });
+
+console.log(p);
