@@ -35,7 +35,7 @@ let p = new Promise((resolve, reject) => {
     console.log("promise is pending");
     setTimeout(() => {
         console.log("i ma fullfill")
-        resolve(true)
+        reject(new Error("i am a new error"))
     }, 5000)
 });
 
