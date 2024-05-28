@@ -31,6 +31,8 @@ const btn = document.querySelector("#btn");
 // getFacts()
 // btn.addEventListener("click", getFacts)
 
+
+//promises agr fullfill ho jati hai to example RESOLVE , REJECT to woh kaam kaise karegi
 let p1 = new Promise((resolve, reject) => {
     console.log("promise is pending");
     setTimeout(() => {
